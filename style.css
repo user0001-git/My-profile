@@ -1,0 +1,41 @@
+.navbar-brand {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+    
+    .symbol {
+      font-size: 0.7rem;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+
+/* Jumbotron dibuat manual karena menggunakan sebagian boostrap versi 4 */
+.jumbotron {
+      /* padding: 2rem(atas-bawah) 1rem(kiri-kanan);  */
+      background-color: skyblue;
+      /* background-color: #FFFFE2; */
+      padding-top: 6rem;
+      /* padding-top: 2rem; supaya gelombang memenuhi layar */
+}
+
+/* About */
+#about {
+      background-color: #FFFF4D;
+}
+
+/* project */
+#project {
+      background-color: #1E90FF;
+}
+
+/* contact */
+#contact {
+      background-color: #e2edff;
+}
+
+/* <!-- href="#(tambahkan id yang dituju)">Home</a> --> */
+section {
+      padding-top: 5rem;
+}
+

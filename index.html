@@ -1,0 +1,270 @@
+<!-- Starter template: https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Icon use CDN (Content Delivery Network[harus online]): https://icons.getbootstrap.com/?q=email -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>My portfolio</title>
+</head>
+
+<body id="home">
+  <!-- Navbar -->
+  <!-- Membuat Navbar header diam dengan fixed-top https://getbootstrap.com/docs/5.0/components/navbar/#placement -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
+    <!-- navbar-dark/light (warna teks) bg-light (white) = background-primary (blue) atau style="background-color: cornflowerblue; (lebih banyak pilihan) shadow-sm (shadow) https://getbootstrap.com/docs/5.0/utilities/shadows/"-->
+    <div class="container">
+      <!-- <div class="container-fluid"> ganti <div class="container"> supaya navbar tidak mepet ke kiri (https://getbootstrap.com/docs/5.0/components/navbar/#containers)-->
+      <a class="navbar-brand" href="#">
+        <span class="name">ファズリ</span>
+        <span class="symbol">©</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <ul class="navbar-nav ms-auto"> ditambahkan ms-auto (ms= margin start/end) supaya selain logo bergeser ke kanan-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- href="#(tambahkan id yang dituju)">Home</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <!-- alt + shift + bawah (duplikat ke bawah) -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir navbar -->
+
+  <!-- Jumbotron https://getbootstrap.com/docs/4.6/components/jumbotron/ (Bukan Bootstrap 5) div diganti section-->
+  <section class="jumbotron text-center">
+    <img src="img/profil.jpeg" alt="profil" width="200" class="rounded-circle img-thumbnail">
+    <h1 class="display-4">ムハマド・ファズリ・マウラナ</h1>
+    <p class="lead">Front-End Development | Client-Side Development</p>
+    <!-- <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    <!-- Gelombang  https://getwaves.io/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#FFFF4D" fill-opacity="1"
+        d="M0,128L48,106.7C96,85,192,43,288,53.3C384,64,480,128,576,160C672,192,768,192,864,165.3C960,139,1056,85,1152,69.3C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir jumbotron -->
+
+  <!-- About -->
+  <section id="about">
+    <!-- Cara membuat layout di Bootstrap: Buat div.container yang di dalamnya grid (row di dalamnya col). Di sini: container + 1 row + 3 col. https://getbootstrap.com/docs/5.0/layout/containers/ -->
+    <div class="container">
+      <div class="row text-center mb-3">
+        <!-- Margin: mb (margin-bottom), mt (margin-top), ms (margin-left), me (margin-right), dan m (keempat sisinya). Nilai: 0-5 dan auto https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
+        <div class="col">
+          <h2>About Me</h2>
+        </div>
+      </div>
+
+      <!-- Supaya paragrafnya di tengah; justify-content-center; https://getbootstrap.com/docs/5.0/layout/columns/; class="fs-5" font-size; https://getbootstrap.com/docs/5.0/utilities/text/#font-size-->
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-md-4">
+          <p>
+            "I am a creative and experienced Front-End Web Developer, skilled in HTML, CSS, and JavaScript, with a focus
+            on building responsive and user-friendly interfaces."
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            "I am also an experienced Client-Side Developer, skilled in JavaScript, React, and Vue.js, with a focus on
+            creating interactive and high-performance web applications."
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#1E90FF" fill-opacity="1"
+        d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,197.3C672,181,768,107,864,101.3C960,96,1056,160,1152,181.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir about -->
+
+  <!-- Project/Card section#project (#=id)-->
+  <section id="project">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>My Projects</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- https://getbootstrap.com/docs/5.0/layout/columns/ justify-content-center -->
+        <div class="col-md-4 mb-3">
+          <!-- X-Small(None) <576px, Small (sm) ≥576px, Medium	(md) ≥768px, Large (lg) ≥992px, Extra large (xl) ≥1200px, Extra extra large (xxl) ≥1400px https://getbootstrap.com/docs/5.0/layout/breakpoints/-->
+          <div class="card" style="background-color: salmon;">
+            <!--Card: https://getbootstrap.com/docs/5.0/components/card/  -->
+            <img src="img/img1.png" class="card-img-top" alt="project1">
+            <div class="card-body">
+              <p class="card-text">Bagian Navbar Brand dan Thumbnail. Silakan jelajahi <a href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan menghubungi saya.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <!--Card: https://getbootstrap.com/docs/5.0/components/card/  -->
+          <div class="card" style="background-color: salmon;">
+            <img src="img/img2.png" class="card-img-top" alt="project2">
+            <div class="card-body">
+              <p class="card-text">Bagian Navigation Menu About Us. Silakan jelajahi <a href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan menghubungi saya.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <!-- X-Small(None) <576px, Small (sm) ≥576px, Medium	(md) ≥768px, Large (lg) ≥992px, Extra large (xl) ≥1200px, Extra extra large (xxl) ≥1400px -->
+          <div class="card" style="background-color: salmon;">
+            <!--  Card: https://getbootstrap.com/docs/5.0/components/card/  -->
+            <img src="img/img3.png" class="card-img-top" alt="project3">
+            <div class="card-body">
+              <p class="card-text">Bagian Navigation Menu Services dan Clients. Silakan jelajahi <a href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan menghubungi saya.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <!-- X-Small(None) <576px, Small (sm) ≥576px, Medium	(md) ≥768px, Large (lg) ≥992px, Extra large (xl) ≥1200px, Extra extra large (xxl) ≥1400px -->
+          <div class="card" style="background-color: salmon;">
+            <!--  Card: https://getbootstrap.com/docs/5.0/components/card/  -->
+            <img src="img/img4.png" class="card-img-top" alt="project4">
+            <div class="card-body">
+              <p class="card-text">Bagian Navigation Menu Portfolio. Silakan jelajahi <a href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan menghubungi saya.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <!-- X-Small(None) <576px, Small (sm) ≥576px, Medium	(md) ≥768px, Large (lg) ≥992px, Extra large (xl) ≥1200px, Extra extra large (xxl) ≥1400px -->
+          <div class="card" style="background-color: salmon;">
+            <!--  Card: https://getbootstrap.com/docs/5.0/components/card/  -->
+            <img src="img/img5.png" class="card-img-top" alt="project5">
+            <div class="card-body">
+              <p class="card-text">Bagian Navigation Menu Contact Us. Silakan jelajahi <a href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan menghubungi saya.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0077BE" fill-opacity="1"
+        d="M0,256L20,234.7C40,213,80,171,120,144C160,117,200,107,240,133.3C280,160,320,224,360,208C400,192,440,96,480,96C520,96,560,192,600,240C640,288,680,288,720,282.7C760,277,800,267,840,245.3C880,224,920,192,960,160C1000,128,1040,96,1080,112C1120,128,1160,192,1200,192C1240,192,1280,128,1320,112C1360,96,1400,128,1420,144L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir project/card -->
+
+  <!-- Contact -->
+  <section id="contact" style="background-color: #0077BE;">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- forms/overview/disabled fieldshet: https://getbootstrap.com/docs/5.0/forms/overview/ -->
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <!-- <label for="exampleInputEmail1(ganti name)" class="form-label">Email address(ganti nama lengkap</label> -->
+              <input type="text" class="form-control" id="name" aria-describedby="name">
+              <!-- <input type="email(ganti text)" class="form-control" id="exampleInputEmail1(ganti name)" aria-describedby="emailHelp(ganti name)"> -->
+            </div>
+            <!-- <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <!-- <label for="exampleInputEmail1(ganti)" class="form-label">Email address(ganti)</label> -->
+              <input type="email" class="form-control" id="email" aria-describedby="email">
+              <!-- <input type="email" class="form-control" id="exampleInputEmail1(ganti email)" aria-describedby="emailHelp (ganti)"> -->
+            </div>
+
+            <!-- Forms/form control https://getbootstrap.com/docs/5.0/forms/form-control/-->
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <!-- <label for="exampleFormControlTextarea1(ganti)" class="form-label">Example textarea(ganti)</label> -->
+              <textarea class="form-control" id="pesan" rows="3"></textarea>
+              <!-- <textarea class="form-control" id="exampleFormControlTextarea1(pesan)" rows="3"></textarea> -->
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#198754" fill-opacity="1"
+        d="M0,128L20,138.7C40,149,80,171,120,154.7C160,139,200,85,240,101.3C280,117,320,203,360,229.3C400,256,440,224,480,218.7C520,213,560,235,600,234.7C640,235,680,213,720,224C760,235,800,277,840,282.7C880,288,920,256,960,240C1000,224,1040,224,1080,218.7C1120,213,1160,203,1200,186.7C1240,171,1280,149,1320,138.7C1360,128,1400,128,1420,128L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir contact -->
+
+  <!-- Footer HTML5-->
+  <!-- Setelah kode CDN disimpan pada HTML, klik icon yang dipilih, lalu copas https://icons.getbootstrap.com/icons/envelope-at-fill/ simpan dilokasi yang diinginkan: <i class="bi bi-envelope-at-fill"></i>-->
+  <footer class="bg-success text-white text-center pb-5">
+    <p>© 2025 ファズリ. Saat ini saya tersedia untuk proyek freelance dan kolaborasi. Jangan ragu untuk menghubungi saya di <i class="bi bi-envelope-at-fill text-warning"></i> muhamadfazrimaulana1@gmail.com atau <i class="bi bi-whatsapp"></i> +62-89519885528.</p>
+  </footer>
+  <!-- Akhir footer -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle (JavaScript) with Popper (Library)-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
