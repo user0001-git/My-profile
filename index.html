@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
   <title>My portfolio</title>
 </head>
@@ -15,7 +16,7 @@
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <span class="name">ファズリ</span>
+        <span class="name">파즈리</span>
         <span class="symbol">©</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -42,8 +43,8 @@
   </nav>
   <section class="jumbotron text-center">
     <img src="img/profil.jpeg" alt="profil" width="200" class="rounded-circle img-thumbnail">
-    <h1 class="display-4">ムハマド・ファズリ・マウラナ</h1>
-    <p class="lead">Front-End Development | Client-Side Development</p>
+    <h1 class="display-4">무하마드 파즈리 마울라나</h1>
+    <p class="lead"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#FFFF4D" fill-opacity="1"
         d="M0,128L48,106.7C96,85,192,43,288,53.3C384,64,480,128,576,160C672,192,768,192,864,165.3C960,139,1056,85,1152,69.3C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -58,13 +59,13 @@
         </div>
       </div>
       <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
           <p>
             "I am a creative and experienced Front-End Web Developer, skilled in HTML, CSS, and JavaScript, with a focus
             on building responsive and user-friendly interfaces."
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <p>
             "I am also an experienced Client-Side Developer, skilled in JavaScript, React, and Vue.js, with a focus on
             creating interactive and high-performance web applications."
@@ -87,52 +88,56 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-4 mb-3">
-          <div class="card" style="background-color: salmon;">
+          <div class="card" data-aos="flip-left" style="background-color: salmon;" data-aos-duration="500">
             <img src="img/img1.png" class="card-img-top" alt="project1">
             <div class="card-body">
-              <p class="card-text">Bagian Navbar Brand dan Thumbnail. Silakan jelajahi <a
-                  href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan
-                menghubungi saya.</p>
+              <p class="card-text">This demonstrates the Navbar Brand and Thumbnail components. Visit <a
+                  href="https://user0001-git.github.io/" target="_blank">my portfolio</a> and feel free to
+                provide your suggestions.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card" style="background-color: salmon;">
+          <div class="card" style="background-color: salmon;" data-aos="flip-left" data-aos-duration="500"
+            data-aos-delay="100">
             <img src="img/img2.png" class="card-img-top" alt="project2">
             <div class="card-body">
-              <p class="card-text">Bagian Navigation Menu About Us. Silakan jelajahi <a
-                  href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan
-                menghubungi saya.</p>
+              <p class="card-text">The About Us navigation menu is displayed here. You're welcome to visit <a
+                  href="https://user0001-git.github.io/" target="_blank">my portfolio</a> and provide your valuable
+                feedback.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card" style="background-color: salmon;">
+          <div class="card" style="background-color: salmon;" data-aos="flip-left" data-aos-duration="500"
+            data-aos-delay="200">
             <img src="img/img3.png" class="card-img-top" alt="project3">
             <div class="card-body">
-              <p class="card-text">Bagian Navigation Menu Services dan Clients. Silakan jelajahi <a
-                  href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan
-                menghubungi saya.</p>
+              <p class="card-text">The Services and Clients navigation section is displayed here. Feel free to visit <a
+                  href="https://user0001-git.github.io/" target="_blank">my portfolio</a> and provide your
+                valuable suggestions.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card" style="background-color: salmon;">
+          <div class="card" style="background-color: salmon;" data-aos="flip-left" data-aos-duration="500"
+            data-aos-delay="300">
             <img src="img/img4.png" class="card-img-top" alt="project4">
             <div class="card-body">
-              <p class="card-text">Bagian Navigation Menu Portfolio. Silakan jelajahi <a
-                  href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan
-                menghubungi saya.</p>
+              <p class="card-text">The Portfolio navigation menu is displayed here. You're welcome to visit <a
+                  href="https://user0001-git.github.io/" target="_blank">my portfolio</a> and provide your
+                valuable input.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-3">
-          <div class="card" style="background-color: salmon;">
+          <div class="card" style="background-color: salmon;" data-aos="flip-left" data-aos-duration="500"
+            data-aos-delay="400">
             <img src="img/img5.png" class="card-img-top" alt="project5">
             <div class="card-body">
-              <p class="card-text">Bagian Navigation Menu Contact Us. Silakan jelajahi <a
-                  href="https://user0001-git.github.io/" target="_blank">website saya</a> dan beri masukan dengan
-                menghubungi saya.</p>
+              <p class="card-text">The Contact Us navigation section is displayed here. You're invited to visit <a
+                  href="https://user0001-git.github.io/" target="_blank">my portfolio</a> and submit your
+                valuable feedback.</p>
             </div>
           </div>
         </div>
@@ -144,6 +149,68 @@
       </path>
     </svg>
   </section>
+  <section id="gallery" style="background-color: #0077BE;">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/1.jpg" alt="img1" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/2.jpg" alt="img2" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/3.jpg" alt="img3" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/4.jpg" alt="img4" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/5.jpg" alt="img1" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/6.jpg" alt="img6" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/7.jpg" alt="img7" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/8.jpg" alt="img8" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/11.jpg" alt="img9" class="img-fluid gallery-img">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-img-container">
+            <img src="img/gallery/thumbnail/10.jpg" alt="img10" class="img-fluid gallery-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
   <section id="contact" style="background-color: #0077BE;">
     <div class="container">
       <div class="row text-center mb-3">
@@ -154,21 +221,20 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Terima kasih telah menghubungi kami!</strong> Pesan Anda sudah kami terima.
+            <strong>Thank you for contacting us!</strong> We have received your message.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
           <form name="my-profile-contact-form">
             <div class="mb-3">
-              <label for="name" class="form-label">Nama Lengkap</label>
-
+              <label for="name" class="form-label">Full Name</label>
               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
+              <label for="email" class="form-label">Email Address</label>
               <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
             </div>
             <div class="mb-3">
-              <label for="pesan" class="form-label">Pesan</label>
+              <label for="pesan" class="form-label">Your Message</label>
               <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-kirim">Send</button>
@@ -187,12 +253,54 @@
     </svg>
   </section>
   <footer class="bg-success text-white text-center pb-5">
-    <p>© 2025 ファズリ. Saat ini saya tersedia untuk proyek freelance dan kolaborasi. Jangan ragu untuk menghubungi saya di
-      <i class="bi bi-envelope-at-fill text-warning"></i> muhamadfazrimaulana1@gmail.com atau <i
-        class="bi bi-whatsapp"></i> +62-89519885528.</p>
+    <p>© 2025 파즈리. I am presently accepting freelance engagements and collaborative opportunities. Contact me
+      via
+      <i class="bi bi-envelope-at-fill text-warning"></i> muhamadfazrimaulana1@gmail.com or <i
+        class="bi bi-whatsapp"></i> +62-89519885528.
+    </p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    const galleryImage = document.querySelectorAll('.gallery-img');
+    galleryImage.forEach((img, i) => {
+      img.dataset.aos = 'fade-down';
+      img.dataset.aosDelay = i * 100;
+      img.dataset.aosDuration = 1000;
+    });
+    AOS.init({
+      once: true,
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', {
+      duration: 2,
+      delay: 1.5,
+      text: 'Front-End Development | Client-Side Development'
+    });
+    gsap.from('.jumbotron img', {
+      duration: 1,
+      rotateY: 360,
+      opacity: 0
+    });
+    gsap.from('.navbar', {
+      duration: 1.5,
+      y: '-100%',
+      opacity: 0,
+      ease: 'bounce'
+    });
+    gsap.from('.display-4', {
+      duration: 1,
+      x: -50,
+      opacity: 0,
+      delay: 0.5,
+      ease: 'back'
+    });
   </script>
   <script>
     const scriptURL =
