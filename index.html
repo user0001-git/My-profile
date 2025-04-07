@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <span class="name">파즈리</span>
+        <span class="name">ファズリ</span>
         <span class="symbol">©</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,7 +43,7 @@
   </nav>
   <section class="jumbotron text-center">
     <img src="img/profil.jpeg" alt="profil" width="200" class="rounded-circle img-thumbnail">
-    <h1 class="display-4">무하마드 파즈리 마울라나</h1>
+    <h1 class="display-4">ムハマド・ファズリ・マウラナ</h1>
     <p class="lead"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#FFFF4D" fill-opacity="1"
@@ -143,6 +143,38 @@
         </div>
       </div>
     </div>
+    <section id="my-laptops">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Products</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="laptop-box">
+              <h4 class="laptop-name">K-511</h4>
+              <img src="image/090.png" alt="K-511" class="laptop-img">
+              <a href="#" class="btn btn-light laptop-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="laptop-box">
+              <h4 class="laptop-name">IND-511</h4>
+              <img src="image/0.png" alt="IND-511" class="laptop-img">
+              <a href="#" class="btn btn-light laptop-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="laptop-box">
+              <h4 class="laptop-name">RHM-511</h4>
+              <img src="image/030.png" alt="RHM-511" class="laptop-img">
+              <a href="#" class="btn btn-light laptop-detail-button">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#0077BE" fill-opacity="1"
         d="M0,256L20,234.7C40,213,80,171,120,144C160,117,200,107,240,133.3C280,160,320,224,360,208C400,192,440,96,480,96C520,96,560,192,600,240C640,288,680,288,720,282.7C760,277,800,267,840,245.3C880,224,920,192,960,160C1000,128,1040,96,1080,112C1120,128,1160,192,1200,192C1240,192,1280,128,1320,112C1360,96,1400,128,1420,144L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
@@ -253,7 +285,7 @@
     </svg>
   </section>
   <footer class="bg-success text-white text-center pb-5">
-    <p>© 2025 파즈리. I am presently accepting freelance engagements and collaborative opportunities. Contact me
+    <p>© 2025 ファズリ. I am presently accepting freelance engagements and collaborative opportunities. Contact me
       via
       <i class="bi bi-envelope-at-fill text-warning"></i> muhamadfazrimaulana1@gmail.com or <i
         class="bi bi-whatsapp"></i> +62-89519885528.
@@ -326,6 +358,14 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".laptop-box"), {
+      max: 35,
+      speed: 1000,
+      glare: true
+    });
   </script>
 </body>
 
